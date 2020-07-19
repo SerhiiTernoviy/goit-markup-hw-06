@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Веб студия Web Studio.com</title>
+  </head>
+  <body>
+    <header class="ka"><!-- Шапка страницы -->
+        <div class="ws">
+            <a href="../DZ1/index.html"
+                title="Перейти на главную страницу"
+                class="Web-Studio box-logo ta box-header"><!-- Логотип сайта  -->
+                <span
+                class="logo-blue"
+                >Web
+                </span>
+                <span
+                class="black"
+                > Studio
+                </span>
+            </a>
+            <ul class="social-links nav-menu ta box-nav-menu box-header list"><!-- Ссылки на другие страницы или разделы текущей -->
+                <li class="space line">
+                    <a href="../DZ1/index.html"
+                    title="Перейти в Студию"
+                    class="link"
+                    >Студия
+                    </a>
+                </li><!-- Studio -->
+                <li class="space line">
+                    <a href="../DZ2/portfolio.html"
+                    title="Перейти в Портфолио"
+                    class="link"
+                    >Портфолио
+                    </a>
+                </li><!-- Portfolio -->
+                <li class="line">
+                    <a href=""
+                        title="Перейти в Контакты"
+                        class="link"
+                        >Контакты
+                    </a>
+                </li><!-- Contact -->
+            </ul>
+            <ul class="nav-menu ta box-menu-nav box-header"><!-- Ссылки на мгновенные: письмо, звонок -->
+                <li class="social-links space-a"><!-- Ссылка на адрес электронной почты  -->
+                    <a href="info@devstudio.com"
+                       title="Отправить письмо нам"
+                       class="link  mail-p">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" aria-label="envelope-(hover)-конверт.svg" class="link">
+                            <!-- <path d="M38.667 0H4C1.794 0 0 1.675 0 3.734v22.404c0 2.059 1.794 3.734 4 3.734h34.667c2.206 0 4-1.675 4-3.734V3.734c0-2.059-1.794-3.734-4-3.734zm0 2.489c.181 0 .353.035.511.096L21.334 17.022 3.49 2.585c.158-.061.33-.096.511-.096h34.667zm0 24.894H4c-.736 0-1.333-.558-1.333-1.245V5.216L20.46 19.611c.251.203.563.304.874.304s.622-.101.874-.304L40.001 5.216v20.922c0 .687-.598 1.245-1.333 1.245z"/> -->
+                            <use href="#icon-envelope-hover-"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a><!-- class="contacts-partition" -->
+                </li>
+                <li class="social-links"><!-- Ссылка на телефонный номер --><!-- <img src="./images1/Vector-силуэт-моб.svg" width="7" height="11"/> -->
+                    <a href="tel:+380961111111"
+                       title="Совершить звонок"
+                       class="link mail-p">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" aria-label="силуэт-телефона.svg" class="link descension">
+                            <!-- <path d="M18.133 0H3.2C1.435 0 0 1.34 0 2.987v25.889c0 1.647 1.435 2.987 3.2 2.987h14.933c1.765 0 3.2-1.34 3.2-2.987V2.987c0-1.647-1.435-2.987-3.2-2.987zM3.2 1.992h14.933c.589 0 1.067.446 1.067.996v20.91H2.133V2.988c0-.549.478-.996 1.067-.996zm14.933 27.88H3.2c-.589 0-1.067-.446-1.067-.996v-2.987H19.2v2.987c0 .549-.478.996-1.067.996z"/> -->
+                            <use href="#icon-Vector"></use>
+                        </svg>
+                    +38 096 111 11 11
+                    </a><!-- class="contacts-partition" -->
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main><!-- Уникальный контент страницы -->
+        <section><!--фильтр портфолио-->
+            <H1 class="none">filter</H1>
+            <ul class="filter-links ta filter-section">
+                <li>
+                    <button
+                        type="radio"
+                        title="показать все"
+                        class="link category-filter"
+                        value="policy"
+                        name="radio-test"
+                        >Все
+                    </button>
+                </li><!--Все-->
+                <li>
+                    <button
+                        type="radio"
+                        title="только веб-сайты"
+                        class="link category-filter"
+                        value="policy"
+                        name="radio-test"
+                        >Веб-сайты
+                    </button>
+                </li><!--Веб-сайты-->
+                <li>
+                    <button
+                        type="radio"
+                        title="только приложения"
+                        class="link category-filter"
+                        value="policy"
+                        name="radio-test"
+                        >Приложения
+                    </button>
+                </li><!--Приложения-->
+                <li>
+                    <button
+                        type="radio"
+                        title="только дизайн"
+                        class="link category-filter"
+                        value="policy"
+                        name="radio-test"
+                        >Дизайн
+                    </button>
+                </li><!--Дизайн-->
+                <li>
+                    <button
+                        type="radio"
+                        title="только маркетинг"
+                        class="link category-filter"
+                        value="policy"
+                        name="radio-test"
+                        >Маркетинг
+                    </button>
+                </li><!--Маркетинг-->
+            </ul>
+
+        </section>
+        <section><!-- портфолио-->
+            <ul class="filter-links cards-section container-p">
+                <li class="element">
+                    <a href=""
+                       class="lll"
+                       title="Технокряк">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Технокряк.jpg"
+                                 alt="Ноутбук"
+                                 width="370"
+                                 height="294"
+                            >
+                            <div class="des">
+                                <p class="text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые средства конкурентов.</p>
+                            </div>
+                        </div>
+                        <h2 class="title">Технокряк</h2>
+                        <h3 class="category">Веб-сайт</h3>
+                    </a>
+                </li><!--Технокряк-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Постер New Orleans vs Golden Star">
+                    <div class="link image-relative">
+                        <img src="./Portfolio-images/New.jpg"
+                             alt="Борьба за мяч"
+                             width="370"
+                             height="294"
+                        >
+                        <div class="des">
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <h2 class="title">Постер New Orleans vs Golden Star</h2>
+                    <h3 class="category">Дизайн</h3>
+                    </a>
+                </li><!--Постер New Orleans vs Golden Star-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Ресторан Seafood">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Ресторан-Seafood.jpg"
+                                 alt="силуэт рыбы, надпись Ресторан Seafood"
+                                 width="370"
+                                 height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <h2 class="title">Ресторан Seafood</h2>
+                        <h3 class="category">Приложение</h3>
+                    </a>
+                </li><!--Ресторан Seafood-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Проект Prime">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Проект-Prime.jpg"
+                                alt="Наушники"
+                                width="370"
+                                height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    <h2 class="title">Проект Prime</h2>
+                    <h3 class="category">Маркетинг</h3>
+                    </a>
+                </li><!--Проект Prime-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Проект Boxes">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Проект-Boxes.jpg"
+                                 alt="2 Boxes"
+                                 width="370"
+                                 height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <h2 class="title">Проект Boxes</h2>
+                        <h3 class="category">Приложение</h3>
+                    </a>
+                </li><!--Проект Boxes-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Inspiration has no Borders">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Inspiration-has-no-Borders.jpg"
+                                alt="Монитор"
+                                width="370"
+                                height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <h2 class="title">Inspiration has no Borders</h2>
+                        <h3 class="category">Веб-сайт</h3>
+                    </a>
+                </li><!--Inspiration has no Borders-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Издание Limited Edition">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Издание-Limited-Edition.jpg"
+                                 alt="открытый журнал Limited Edition"
+                                 width="370"
+                                 height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <h2 class="title">Издание Limited Edition</h2>
+                        <h3 class="category">Дизайн</h3>
+                    </a>
+                </li><!--Издание Limited Edition-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Проект LAB">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Проект-LAB.jpg"
+                                alt="Ярлык"
+                                width="370"
+                                height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    <h2 class="title">Проект LAB</h2>
+                    <h3 class="category">Маркетинг</h3>
+                    </a>
+                </li><!--Проект LAB-->
+                <li class="element">
+                    <a href=""
+                        class="lll"
+                       title="Growing Business">
+                        <div class="link image-relative">
+                            <img src="./Portfolio-images/Growing-Business.jpg"
+                                 alt="Ноутбук на столе"
+                                 width="370"
+                                 height="294"
+                            >
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <h2 class="title">Growing Business</h2>
+                        <h3 class="category">Приложение</h3>
+                    </a>
+                </li><!--Growing Business-->
+            </ul>
+        </section>
+    </main>
+    <footer class=""><!-- Подвал страницы -->
+        <div class="footer-box container-footer">
+            <div class="contacts-in-footer">
+                        <!-- Логотип сайта  -->
+                <a href="../DZ2/portfolio.html"
+                    title="Перейти на главную страницу"
+                    class="Web-Studio">
+                    <span class="logo-blue">Web</span>
+                    <span class="white"> Studio</span>
+                </a>
+                        <!-- Адрес и ссылки -->
+                <h2 class="none">Контакты</h2>
+                <div class="contacts">
+                    <div>
+                        <h3 title="город Киев, пр-т Леси Украинки, 26"
+                            class="white address-studio lgo-footer"
+                            >г. Киев, пр-т Леси Украинки, 26
+                        </h3>
+                    </div>
+                    <div class="social-links">
+                        <a href="info@example.com"
+                        title="Отправить письмо нам"
+                        class="contacts-partition link footer-contacts-studio"
+                        >example.com.com
+                        </a>
+                    </div>
+                    <div class="social-links"><!-- Ссылка на телефонный номер -->
+                        <a href="tel:+380991111111"
+                        title="Совершить звонок"
+                        class="contacts-partition link footer-number-studio"
+                        >+38 099 111 11 11
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-footer">
+                <h2 class="white join">Присоединяйтесь</h2>
+                <ul class="social-list">
+                    <li>
+                        <a class="order-service">
+                            <svg viewBox="-15 -15 60 60" class="footer-social" aria-label="ссылка на instagram">
+                                <!-- <use href="#icon-instagram2"></use> -->
+                                <path fill="var(--bg, #fff)" d="M31.969 9.408c-.075-1.7-.35-2.869-.744-3.882a7.806 7.806 0 00-1.851-2.838A7.867 7.867 0 0026.542.844C25.523.45 24.36.175 22.66.1 20.947.019 20.403 0 16.059 0s-4.888.019-6.595.094c-1.7.075-2.869.35-3.882.744a7.803 7.803 0 00-2.838 1.85A7.867 7.867 0 00.9 5.52C.506 6.539.231 7.702.156 9.402c-.081 1.713-.1 2.257-.1 6.601s.019 4.888.094 6.595c.075 1.7.35 2.869.744 3.882a7.895 7.895 0 001.85 2.838 7.867 7.867 0 002.832 1.844c1.019.394 2.182.669 3.882.744 1.706.075 2.25.094 6.595.094s4.888-.019 6.595-.094c1.7-.075 2.869-.35 3.882-.744a8.184 8.184 0 004.682-4.682c.394-1.019.669-2.182.744-3.882.075-1.707.094-2.251.094-6.595s-.006-4.888-.081-6.595zm-2.882 13.065c-.069 1.563-.331 2.407-.55 2.969a5.31 5.31 0 01-3.038 3.038c-.563.219-1.413.481-2.969.55-1.688.075-2.194.094-6.464.094s-4.782-.019-6.464-.094c-1.563-.069-2.407-.331-2.969-.55a4.926 4.926 0 01-1.838-1.194 4.974 4.974 0 01-1.194-1.838c-.219-.563-.481-1.413-.55-2.969-.075-1.688-.094-2.194-.094-6.464s.019-4.782.094-6.464c.069-1.563.331-2.407.55-2.969a4.868 4.868 0 011.2-1.838A4.974 4.974 0 016.639 3.55c.563-.219 1.413-.481 2.969-.55 1.688-.075 2.194-.094 6.464-.094 4.276 0 4.782.019 6.464.094 1.563.069 2.407.331 2.969.55a4.914 4.914 0 011.838 1.194 4.974 4.974 0 011.194 1.838c.219.563.481 1.413.55 2.969.075 1.688.094 2.194.094 6.464s-.019 4.77-.094 6.458z"/>
+                                <path fill="var(--bg, #fff)" d="M16.059 7.783c-4.538 0-8.22 3.682-8.22 8.22s3.682 8.22 8.22 8.22c4.539 0 8.22-3.682 8.22-8.22s-3.682-8.22-8.22-8.22zm0 13.553a5.333 5.333 0 010-10.664 5.333 5.333 0 010 10.664zM26.524 7.458a1.919 1.919 0 11-3.838 0 1.919 1.919 0 013.838 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <svg viewBox="-15 -15 60 60" class="footer-social" aria-label="ссылка на twitter">
+                                <!-- <use href="#icon-twitter1"></use> -->
+                                <path fill="var(--bg, #fff)" d="M32 6.078c-1.19.522-2.458.868-3.78 1.036a6.523 6.523 0 002.886-3.626 13.11 13.11 0 01-4.16 1.588A6.574 6.574 0 0022.154 3c-3.632 0-6.556 2.948-6.556 6.562 0 .52.044 1.02.152 1.496-5.454-.266-10.28-2.88-13.522-6.862a6.605 6.605 0 00-.898 3.316 6.57 6.57 0 002.914 5.452 6.479 6.479 0 01-2.964-.808v.072c0 3.188 2.274 5.836 5.256 6.446a6.548 6.548 0 01-1.72.216 5.8 5.8 0 01-1.242-.112c.85 2.598 3.262 4.508 6.13 4.57a13.182 13.182 0 01-8.134 2.798c-.538 0-1.054-.024-1.57-.09A18.469 18.469 0 0010.064 29c12.072 0 18.672-10 18.672-18.668 0-.29-.01-.57-.024-.848A13.087 13.087 0 0032 6.078z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <svg viewBox="-13 -15 60 60" class="footer-social" aria-label="ссылка на facebook">
+                                <!-- <use href="#icon-facebook1"></use> -->
+                                <path fill="var(--bg, #fff)" d="M21.329 5.313h2.921V.225C23.746.156 22.013 0 19.994 0c-4.212 0-7.097 2.649-7.097 7.519V12H8.249v5.688h4.648V32h5.699V17.689h4.46l.708-5.688h-5.169V8.082c.001-1.644.444-2.769 2.735-2.769z"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <svg  viewBox="-15 -15 60 60" class="footer-social" aria-label="ссылка на linkedin">
+                                <!-- <use href="#icon-linkedin1"></use> -->
+                                <path fill="var(--bg, #fff)" d="M31.992 32v-.001H32V20.263c0-5.741-1.236-10.164-7.948-10.164-3.227 0-5.392 1.771-6.276 3.449h-.093v-2.913h-6.364v21.364h6.627V21.42c0-2.785.528-5.479 3.977-5.479 3.399 0 3.449 3.179 3.449 5.657v10.401h6.62zM.528 10.636h6.635V32H.528V10.636zM3.843 0C1.722 0 0 1.721 0 3.843s1.721 3.879 3.843 3.879c2.121 0 3.843-1.757 3.843-3.879A3.846 3.846 0 003.843 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form autocomplete="off" class="js-form footer-form">
+                <div class="mail-footer">
+                    <h2 class="social-footer-title white join">Подпишитесь на рассылку</h2><!-- Подписка -->
+                    <div class="subscription">
+                        <span>
+                            <input type="email"
+                                id="mail-footer"
+                                name="mail-footer"
+                                placeholder="  E-mail"
+                                class="email mail-text white-join" 
+                            />
+                        </span>
+                        <button href=""
+                                type="submit"
+                                class="mail">
+                            <b class="Subscribe">Подписаться</b>
+                            <div class="send">
+                                <svg viewBox="0 0 32 32" aria-label="отправить">
+                                    <path fill="var(--bg, #ffffff)" d="M32 0L0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector('[data-open-modal]'),
+          closeModalBtn: document.querySelector('[data-close-modal]'),
+          backdrop: document.querySelector('[data-backdrop]'),
+          body: document.body,
+        };
+  
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+  
+        refs.backdrop.addEventListener('click', logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle('is-hidden');
+          refs.body.classList.toggle('disable-scroll');
+        }
+  
+        function logBackdropClick() {
+          console.log('Это клик в бекдроп');
+        }
+    </script>
+    <!-- <script>
+        (() => {
+            document
+                .querySelector('.js-form')
+                .addEventListener('submit', e => {
+                 e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name =>
+                        console.log('${name}: ${value}'),
+                        );
+                    });
+            })();
+    </script> -->
+  </body>
+</html> 
+
+
+
+
+<div class="none">
+    <ul class="menu">
+        <li class="menu-items">
+            <a class="menu-link">
+                a
+            </a>
+        </li>
+        <li class="menu-items">
+            <a class="menu-link">
+                b
+            </a>
+        </li>
+        <li class="menu-items">
+            <a class="menu-link">
+                c
+            </a>
+        </li>
+        <li class="element menu-items">
+            <a href=""
+               class="menu-link"
+               title="Технокряк">
+            <p class="text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые средства конкурентов.</p>
+            <img src="./Portfolio-images/Технокряк.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                    height="294">
+            </a>
+            <h2 class="title">Технокряк</h2>
+            <h3 class="category">Веб-сайт</h3>
+        </li>
+    </ul>
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         overflow="hidden">
+        <defs>
+            <symbol id="icon-envelope-hover-" viewBox="0 0 43 32">
+                <path d="M38.667 0H4C1.794 0 0 1.675 0 3.734v22.404c0 2.059 1.794 3.734 4 3.734h34.667c2.206 0 4-1.675 4-3.734V3.734c0-2.059-1.794-3.734-4-3.734zm0 2.489c.181 0 .353.035.511.096L21.334 17.022 3.49 2.585c.158-.061.33-.096.511-.096h34.667zm0 24.894H4c-.736 0-1.333-.558-1.333-1.245V5.216L20.46 19.611c.251.203.563.304.874.304s.622-.101.874-.304L40.001 5.216v20.922c0 .687-.598 1.245-1.333 1.245z"/>
+            </symbol>
+            <symbol id="icon-Vector" viewBox="0 0 21 32">
+                <path d="M18.133 0H3.2C1.435 0 0 1.34 0 2.987v25.889c0 1.647 1.435 2.987 3.2 2.987h14.933c1.765 0 3.2-1.34 3.2-2.987V2.987c0-1.647-1.435-2.987-3.2-2.987zM3.2 1.992h14.933c.589 0 1.067.446 1.067.996v20.91H2.133V2.988c0-.549.478-.996 1.067-.996zm14.933 27.88H3.2c-.589 0-1.067-.446-1.067-.996v-2.987H19.2v2.987c0 .549-.478.996-1.067.996z"/>
+            </symbol>
+        </defs>
+    </svg>
+
+
+
+    <header class="ka"><!-- Шапка страницы -->
+        <a href="../DZ1/index.html"
+            title="Перейти на главную страницу"
+            class="Web-Studio box-logo ta box-header"><!-- Логотип сайта  -->
+            <span
+            class="logo-blue"
+            >Web
+            </span>
+            <span
+            class="black"
+            > Studio
+            </span>
+        </a>
+        <ul class="social-links nav-menu ta box-nav-menu box-header"><!-- Ссылки на другие страницы или разделы текущей -->
+            <li class="space">
+                <a href="../DZ1/index.html"
+                title="Перейти в Студию"
+                class="link"
+                >Студия
+                </a>
+            </li><!-- Studio -->
+            <li class="space">
+                <a href="../DZ2/portfolio.html"
+                title="Перейти в Портфолио"
+                class="link"
+                >Портфолио
+                </a>
+            </li><!-- Portfolio -->
+            <li>
+                <a href=""
+                    title="Перейти в Контакты"
+                    class="link"
+                    >Контакты
+                </a>
+            </li><!-- Contact -->
+        </ul>
+        <ul class="nav-menu ta box-menu-nav box-header"><!-- Ссылки на мгновенные: письмо, звонок -->
+            <li class="social-links space-a"><!-- Ссылка на адрес электронной почты  -->
+                <img
+                    src="./Portfolio-images/envelope-(hover)-конверт.svg"
+                    alt="envelope-(hover)-конверт.svg"
+                    width="15"
+                    height="8"
+                />
+                <a href="info@devstudio.com"
+                title="Отправить письмо нам"
+                class="link  mail-p"
+                >info@devstudio.com
+                </a><!-- class="contacts-partition" -->
+            </li>
+            <li class="social-links"><!-- Ссылка на телефонный номер -->
+                <img src="./Portfolio-images/Vector-силуэт-моб.svg"
+                    alt="силуэт-телефона.svg"
+                    width="7"
+                    height="11"
+                    />
+                <a href="tel:+380961111111"
+                title="Совершить звонок"
+                class="link mail-ph"
+                >+38 096 111 11 11
+                </a><!-- class="contacts-partition" -->
+            </li>
+        </ul>
+    </header>
+
+
+    <footer class=""><!-- Подвал страницы -->
+        <div class="footer-box container-footer">
+            <div class="contacts-in-footer">
+                        <!-- Логотип сайта  -->
+                <a href="../DZ2/portfolio.html"
+                    title="Перейти на главную страницу"
+                    class="Web-Studio">
+                    <span class="logo-blue">Web</span>
+                    <span class="white"> Studio</span>
+                </a>
+                        <!-- Адрес и ссылки -->
+                <h2 class="none">Контакты</h2>
+                <div class="contacts">
+                    <div>
+                        <h3 title="город Киев, пр-т Леси Украинки, 26"
+                            class="white address-studio lgo-footer"
+                            >г. Киев, пр-т Леси Украинки, 26
+                        </h3>
+                    </div>
+                    <div class="social-links">
+                        <a href="info@example.com"
+                        title="Отправить письмо нам"
+                        class="contacts-partition link footer-contacts-studio"
+                        >example.com.com
+                        </a>
+                    </div>
+                    <div class="social-links"><!-- Ссылка на телефонный номер -->
+                        <a href="tel:+380991111111"
+                        title="Совершить звонок"
+                        class="contacts-partition link footer-number-studio"
+                        >+38 099 111 11 11
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-footer">
+                <h2 class="white join">Присоединяйтесь</h2>
+                <div class="social-links ta tat">
+                    <span>
+                        <button class="order-service" type="button">
+                            <a href="" class="space-social">
+                                <img
+                                src="./images1/instagram2.svg"
+                                alt="ссылка на instagram"
+                                width="20"
+                                height="20"
+                                /><!-- class="social-logo" -->
+                            </a><!-- Instagram-->
+                        </button>
+                        <button class="order-service" type="button">
+                            <a href="" class="space-social">
+                                <img
+                                    src="./images1/Vector-твитер.svg"
+                                    alt="ссылка на Twitter"
+                                    width="20"
+                                    height="20"
+                                    /><!-- class="social-logo" -->
+                            </a>
+                        </button>
+                        <button class="order-service" type="button">
+                            <a href="" class="space-social">
+                                <img
+                                src="./images1/Facebook1.svg"
+                                alt="ссылка на Facebook"
+                                width="20"
+                                height="20"
+                                />
+                            </a>
+                        </button>
+                        <button class="order-service" type="button">
+                            <a href="" class="space-social">
+                                <img
+                                    src="./images1/Linkedin1.svg"
+                                    alt="ссылка на Linkedin"
+                                    width="20"
+                                    height="20"
+                                />
+                            </a>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="mail-footer">
+                <h2 class="social-footer-title white join">Подпишитесь на рассылку</h2><!-- Подписка -->
+                <div class="subscription">
+                    <span>
+                        <input type="email"
+                            placeholder="E-mail"
+                            class="Email mail-text mail-footer white-join" 
+                        >
+                    </span>
+                    <button type="button"
+                            class="button-blue white mail-footer">
+                        <a href="" class="ta">
+                            <p class="Subscribe">Подписаться</p>
+                            <img src="./images1/icon-send-самолетик.svg"
+                                alt="отправить"
+                                width="24"
+                                height="24"
+                                />
+                        </a>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
